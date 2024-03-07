@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipos en contrato PJUD</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <img src="img/logo.png" alt="Logo de la empresa" class="logo">
+        <h1>Equipos en contrato PJUD</h1>
+        <label for="serie" style="margin-bottom: 10px;">Ingrese la serie del equipo:</label>
+        <div id="cargando" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            <img src="img/loading.gif" alt="Cargando..." style="width: 50px; height: 50px;" />
+        </div>
+        
+        <input type="text" id="serie" required>
+        <button onclick="buscarEquipo()">Buscar</button>
+        <div id="resultado"></div>
+    </div>
+    
+    <script src="xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+    <footer class="copyright">
+        <p>&copy; 2024 Markuituz</p>
+    </footer>      
+</body>
+</html>
