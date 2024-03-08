@@ -3,7 +3,7 @@ function buscarEquipo() {
 
 
   var serie = document.getElementById("serie").value.toUpperCase();
-  var url = "https://github.com/markuituz/consulta-serie/raw/main/contrato.xlsx";
+  var url = "'https://spreadsheets.google.com/feeds/list/1a98ddlrU6CqJhCfj69ECPsnyDPj1bX6UYFpWZfedpUk/1/public/values?alt=json';";
 
 
   var xhr = new XMLHttpRequest();
