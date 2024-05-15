@@ -3,7 +3,9 @@ function buscarEquipo() {
 
 
   var serie = document.getElementById("serie").value.toUpperCase();
-  var url = "'https://spreadsheets.google.com/feeds/list/1a98ddlrU6CqJhCfj69ECPsnyDPj1bX6UYFpWZfedpUk/1/public/values?alt=json';";
+  var url = 'https://raw.githubusercontent.com/markuituz/consulta-serie/main/contrato.xlsx'; // URL del archivo Excel en GitHub
+
+  fetch(url)
 
 
   var xhr = new XMLHttpRequest();
